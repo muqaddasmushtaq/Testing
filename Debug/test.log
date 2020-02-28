@@ -1,0 +1,4 @@
+﻿  test.cpp
+C:\Users\Muqadas Mushtaq\source\repos\test\test.cpp(103,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Muqadas Mushtaq\source\repos\test\test.cpp(113,11): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  test.vcxproj -> C:\Users\Muqadas Mushtaq\source\repos\test\Debug\test.exe
