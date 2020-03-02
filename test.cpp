@@ -3,6 +3,7 @@
 
 int main()
 {
+	forloop();
 	dowhile();
 	//Start with the loops.
 	//Loop wahan use hote hen jab hum ksi same code ko bar bar chlana chate hon..
@@ -72,4 +73,36 @@ void dowhile()
 
 	//okay? bss debug kr diaa  debug to dikhane k liey kia   kase chalta ha..program ho gya finish
 	//program to folder me create hota ha  .exe file..
+	//
+	//do while loop us jaga use hota ha.. jab hameen koy program at least 1 time chalana ho
+	//agr condition false ho tab be... or while loop..  while loop me agr condition false
+	//ho to 1 bar b ne chale ga..pta kesy chlta k abhi hmy ye loop use krna..  wohi to btaya..okk
+	//thora or ho jaye to phir example program bnayeen gay to cleare ho jaye ga.
 }
+
+void forloop()
+{
+	//for loop
+	//  for loop tab use kia jata ha jab hameen already maloom ho k kitne bar chale ga..
+	//  for loop me 1 or b faida ha..  is me jo loop itterator hota ha... jase while loop me
+	//  x use kia tha..  itterator se wo condition check krta ha.. false ya true..
+	//  itterator?  loop k andar jo variable use krte hen.. condition me..  or usy increment ya
+	//  decrement krte hen loop k andar...  jase abe do-while me  x variable tha...
+	//  itterator ke smaj aye..g
+	//
+	//  for loop k bad () k andar itterator variable create kia jata ha.. us k bad condition
+	//  and us k bad phir increment ya decrement...  sab kuch 1 sath he aa jata ha..
+	//  bad me phir us ke body..
+	//
+	for (int x = 0; x < 10; x++)		//here... 1 bar chalne k bad wapis jab start pr ata ha to
+		// us waqt last wale statement execute hote ha..  x++ wale...   x ko increment kre ga phir
+		// condition check kre ga or phir loop ke body execute hoge agr true hua to.. false pr loop end.
+	{//ye sara kam for loop krta..yes..or khud sy hi ye condition lganiii.. ham jo lagayeen gay   in this...  x < 10
+		//uper wale line me dekho...  teeno statements is ke brackets me he hen..
+		cout << x << endl;
+
+		//x 1 ho gia or condition abi true ha.. as 1 < 10
+
+		//now x will be 10   and  10 <10  is false..
+	}
+}   //loop se bahir aa gia...ye kesy hwa  condition flase ha... is liey  loop end ho gia..k x less than 10   yes..  x jab 10 ho gia to phir wo less than to ne raha..g 
