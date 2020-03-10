@@ -4,3 +4,4 @@ using namespace std;
 
 void dowhile();
 void forloop();
+void switchstatement();

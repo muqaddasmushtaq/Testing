@@ -3,6 +3,7 @@
 
 int main()
 {
+	switchstatement();
 	forloop();
 	dowhile();
 	//Start with the loops.
@@ -106,3 +107,65 @@ void forloop()
 		//now x will be 10   and  10 <10  is false..
 	}
 }   //loop se bahir aa gia...ye kesy hwa  condition flase ha... is liey  loop end ho gia..k x less than 10   yes..  x jab 10 ho gia to phir wo less than to ne raha..g 
+
+
+void switchstatement()
+{
+	//switch statement...
+	//Switch statement b   condition ko check krte ha.. and us k mutabiq operation perform krte
+	//ha like if statement...  is me farq sirf itna ha k ye multiple choices se se agr koy 1
+	//select krna ho to phir use hote ha.. condition is me 1 bar he test hote ha..
+	//normaly is ko 1 value de jate ha.. jise compare krte ha or jiss case se match jo wo chalta
+	//ha..
+	//
+	//switch start with switch keyword  along with a variable  or expression in ()
+	//is ke body me case statement hote hen..     like    case 1:
+	//case k bad value likhe jate ha.. switch is value se variable ko match krta ha or jis case
+	//se match ho wo execute hota ha..   case  k bad colon ata ha    :
+	//
+	int x = 4;
+
+	switch (x)
+	{
+	case 1:
+		cout << "Case 1 executed." << endl;
+		//is me jo b case match hota ha is se agay  sara code chalta ha...
+		//lakin agr sirf 1 he case ko chlana ho to us k liey case block k end me break krna hoga
+		//break program k us hissa ko stop kr k bahir aa jta ha...  and agay chalne lagta ha///
+		break;
+	case 2:
+		cout << "Case 2 executed." << endl;
+		break;
+	case 3:
+		cout << "Case 3 executed." << endl;
+		break;
+		//these brakes will stop after execution one case block...
+		//isy hum apni marzi se lagayeen gay jahan zrorat ho..
+	default:
+		cout << "Default executed." << endl;
+	}
+	//default us waqt execute hoge jab ko b case match ne hota..
+	//default likhna zrori ne hota...   isy chor b sakte hen agr zrorat ne..
+	//is me x ke value ko compare kre ga case k sath or jo match hoge.. wahan se agay program chale
+	//ga...
+	//
+	//switch ka faida ye ha k ye sirf 1 comparison krta ha.. ho matching value tak directely
+	//ponch jata ha..  if else me shuru se end tak sab conditions check krta ha...
+	//
+	//eg:
+	if (x == 1) cout << "x = 1" << endl;
+	if (x == 2) cout << "x = 2" << endl;
+	if (x == 3) cout << "x = 3" << endl;
+	else cout << "x = " << x;
+
+	//is me sare if chalte hen...  and this is over head for CPU... switch has better performance.
+	//ok? kis mai sary iff chlty... if me he...   mutlab.. k   if me sare conditions check krta ha...
+	//agr 10 if statements hon  or condition last wale ke true ho to us tak poonchtay poonchtay phale
+	//sare 9 condition check krta ha...  lakin agr switch use kreen to sirf 1 bar he condition
+	//check kre ga or directely jis case se match kr raha ha us per jump kr jaye ga...
+	//agr 10 values ho or last wale true ho tab b sirf 1 compare me 10 number wale pr jump kr jaye ga..
+	//har ak value ko check ne krta...
+	//is se CPU ke power bachtee ha...  or program b fast chalta ha..
+	//cleare hua???g sir ho gya cmplt   yes...achaa ye jo roz ap sara smjhaty ho ye kahan hai mjhy ni miltaa
+	//.
+}
